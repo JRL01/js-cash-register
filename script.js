@@ -14,13 +14,9 @@ for (let i = cid.length; i > 0; i--) {
 const registerCheck = () => {
     if (Number(cash.value) < price) {
         changeText.innerText = "Customer does not have enough money to purchase the item";
-        return;
     } else if (Number(cash.value) == price) {
         changeText.innerText = "No change due - customer payed with exact cash";
-        return;
-    } else if (change > cidSum) {
-        changeText.innerText = "INSUFFICIENT_FUNDS";
-    }
+    } 
 };
 
 const cashToDrawer = () => {};
