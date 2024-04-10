@@ -7,7 +7,7 @@ const change = Number(cash.value) - price;
 const screenText = document.getElementById("cash-register-screen");
 const changeText = document.getElementById("change-due");
 
-const registerCheck = () => {
+const registerCheck = (cash, change, changeText) => {
     if (Number(cash.value) < price) {
         changeText.innerText = "Customer does not have enough money to purchase the item";
     } else if (Number(cash.value) === price) {
