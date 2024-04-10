@@ -11,6 +11,12 @@ header > h1 {
     font-size: 50px;
 }
 
+#change-due {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
 #cash-input > div > label {
     font-size: 20px;
 }
